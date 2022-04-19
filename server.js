@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
-const PORT = 1178;
+const PORT = process.env.PORT || 1337;
 import hamsters from "./routes/hamsters.js";
 const staticFolder = path.join(__dirname, "public");
 
